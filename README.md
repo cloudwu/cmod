@@ -25,7 +25,7 @@ foo(struct cmod *C) {
   // import module foo
   // NOTICE: The pointer mod never change, so you don't have to import it frequently.
   struct foo * mod = C->import(C, "foo");
-  return foo->func();
+  return mod->func();
 }
 ```
 
